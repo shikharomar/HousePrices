@@ -27,3 +27,16 @@ df_train.isnull().sum().max() # Just checking if all the null values are removed
     Homoscedasticity
 #####          #####
 
+#####     --Pipeline--     #####
+
+> Data description
+	df.info(), df.describe()
+> Removing duplicate rows
+	df.duplicate().sum(), df.drop_duplicates() 
+> Getting important features, scatter plots and heatmaps
+> Checks for Linear Regression assuptions (Normality, Homoscedasticity, Autocorrelation, Multivariate Collinearity, Linear Relationship)
+>
+
+#####          #####
+
+
