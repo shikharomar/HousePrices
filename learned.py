@@ -8,7 +8,7 @@ hm = sns.heatmap(cm, cbar=True, annot=True, square=True, fmt='.2f', annot_kws={'
 plt.show()
 #####          #####
 
-#####     --Counting the number and removal of Null values in the dataset--     #####
+#####     --Counting the number of Null values in the dataset and their removal--     #####
 total = df_train.isnull().sum().sort_values(ascending = False)
 percent = (df_train.isnull().sum() / df_train.isnull().count()).sort_values(ascending = False)
 missing = pd.concat([total, percent], axis =1, keys = ['Total', 'Percent'])
@@ -27,6 +27,13 @@ df_train.isnull().sum().max() # Just checking if all the null values are removed
     Homoscedasticity
 #####          #####
 
+
+#####     --Different ways of removing outliers--     #####
+
+
+#####          #####
+
+
 #####     --Pipeline--     #####
 
 > Data description
@@ -34,7 +41,7 @@ df_train.isnull().sum().max() # Just checking if all the null values are removed
 > Removing duplicate rows
 	df.duplicate().sum(), df.drop_duplicates() 
 > Getting important features, scatter plots and heatmaps
-> Checks for Linear Regression assuptions (Normality, Homoscedasticity, Autocorrelation, Multivariate Collinearity, Linear Relationship)
+> Checks for Linear Regression assumptions (Normality, Homoscedasticity, Autocorrelation, Multivariate Collinearity, Linear Relationship)
 >
 
 #####          #####
